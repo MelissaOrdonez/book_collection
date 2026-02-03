@@ -3794,3 +3794,15 @@ Completed 200 OK in 1465ms (Views: 9.9ms | ActiveRecord: 0.8ms (1 query, 0 cache
 Completed 200 OK in 1720ms (Views: 41.7ms | ActiveRecord: 2.9ms (3 queries, 0 cached) | GC: 1.7ms)
 
 
+  [1m[36mUserBook Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "user_books" LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mBook Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "books" LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mUser Count (3.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" /*application='TestApp'*/[0m
+  [1m[36mUser Count (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" /*application='TestApp'*/[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 2 OFFSET 0 /*application='TestApp'*/[0m
+  [1m[36mBook Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" /*application='TestApp'*/[0m
+  [1m[36mBook Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" /*application='TestApp'*/[0m
+  [1m[36mBook Load (1.6ms)[0m  [1m[34mSELECT "books".* FROM "books" ORDER BY "books"."id" ASC LIMIT 1 OFFSET 0 /*application='TestApp'*/[0m
+  [1m[36mUserBook Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_books" /*application='TestApp'*/[0m
+  [1m[36mUserBook Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_books" /*application='TestApp'*/[0m
+  [1m[36mUserBook Load (0.8ms)[0m  [1m[34mSELECT "user_books".* FROM "user_books" ORDER BY "user_books"."id" ASC LIMIT 1 OFFSET 0 /*application='TestApp'*/[0m
