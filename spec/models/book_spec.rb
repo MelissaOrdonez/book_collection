@@ -25,4 +25,8 @@ RSpec.describe Book, type: :model do
     book = Book.new(title: "Book Title", published_date: nil)
     expect(book).to_not be_valid
   end
+
+  it "loads seeded data into the test database" do
+    expect(Book.count).to be > 0
+  end
 end

@@ -3806,3 +3806,185 @@ Completed 200 OK in 1720ms (Views: 41.7ms | ActiveRecord: 2.9ms (3 queries, 0 ca
   [1m[36mUserBook Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_books" /*application='TestApp'*/[0m
   [1m[36mUserBook Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_books" /*application='TestApp'*/[0m
   [1m[36mUserBook Load (0.8ms)[0m  [1m[34mSELECT "user_books".* FROM "user_books" ORDER BY "user_books"."id" ASC LIMIT 1 OFFSET 0 /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Create (11.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ('Melissa', '2026-02-03 05:27:04.784800', '2026-02-03 05:27:04.784800') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Create (5.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ('Andrea', '2026-02-03 05:27:04.814464', '2026-02-03 05:27:04.814464') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mBook Create (6.7ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author", "price", "published_date") VALUES ('Harry Potter', '2026-02-03 05:27:04.939436', '2026-02-03 05:27:04.939436', 'JK Rowling', 10.99, '2026-02-03') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mBook Create (6.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author", "price", "published_date") VALUES ('Harry Potter 2', '2026-02-03 05:27:04.980973', '2026-02-03 05:27:04.980973', 'JK Rowling', 11.99, '2026-02-03') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mBook Create (9.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author", "price", "published_date") VALUES ('Harry Potter 3', '2026-02-03 05:27:05.024360', '2026-02-03 05:27:05.024360', 'JK Rowling', 12.99, '2026-02-03') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mBook Create (4.7ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author", "price", "published_date") VALUES ('Harry Potter 4', '2026-02-03 05:27:05.057759', '2026-02-03 05:27:05.057759', 'JK Rowling', 13.99, '2026-02-03') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mBook Create (4.7ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author", "price", "published_date") VALUES ('Harry Potter 5', '2026-02-03 05:27:05.080782', '2026-02-03 05:27:05.080782', 'JK Rowling', 14.99, '2026-02-03') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 1 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mUserBook Create (0.9ms)[0m  [1m[32mINSERT INTO "user_books" ("user_id", "book_id", "created_at", "updated_at") VALUES (2, 1, '2026-02-03 05:27:05.488093', '2026-02-03 05:27:05.488093') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 3 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mUserBook Create (1.0ms)[0m  [1m[32mINSERT INTO "user_books" ("user_id", "book_id", "created_at", "updated_at") VALUES (1, 3, '2026-02-03 05:27:05.529876', '2026-02-03 05:27:05.529876') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Create (12.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ('Melissa', '2026-02-03 05:33:51.963486', '2026-02-03 05:33:51.963486') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Create (3.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ('Andrea', '2026-02-03 05:33:51.992792', '2026-02-03 05:33:51.992792') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mBook Create (7.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author", "price", "published_date") VALUES ('Harry Potter (DEV)', '2026-02-03 05:33:52.080636', '2026-02-03 05:33:52.080636', 'JK Rowling', 10.99, '2026-02-03') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mBook Create (4.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author", "price", "published_date") VALUES ('Harry Potter 2 (DEV)', '2026-02-03 05:33:52.122951', '2026-02-03 05:33:52.122951', 'JK Rowling', 11.99, '2026-02-03') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mBook Create (15.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author", "price", "published_date") VALUES ('Harry Potter 3 (DEV)', '2026-02-03 05:33:52.149837', '2026-02-03 05:33:52.149837', 'JK Rowling', 12.99, '2026-02-03') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 1 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mUserBook Create (0.8ms)[0m  [1m[32mINSERT INTO "user_books" ("user_id", "book_id", "created_at", "updated_at") VALUES (2, 1, '2026-02-03 05:33:52.469950', '2026-02-03 05:33:52.469950') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 3 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mUserBook Create (0.6ms)[0m  [1m[32mINSERT INTO "user_books" ("user_id", "book_id", "created_at", "updated_at") VALUES (1, 3, '2026-02-03 05:33:52.505190', '2026-02-03 05:33:52.505190') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+Started GET "/" for 172.17.0.1 at 2026-02-03 05:37:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+Processing by UserBooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_books/index.html.erb within layouts/application
+  [1m[36mUserBook Load (70.4ms)[0m  [1m[34mSELECT "user_books".* FROM "user_books" /*action='index',application='TestApp',controller='user_books'*/[0m
+  ↳ app/views/user_books/index.html.erb:15
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" DESC LIMIT 1 /*action='index',application='TestApp',controller='user_books'*/[0m
+  ↳ app/views/user_books/index.html.erb:17
+  [1m[36mBook Load (3.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 1 ORDER BY "books"."id" DESC LIMIT 1 /*action='index',application='TestApp',controller='user_books'*/[0m
+  ↳ app/views/user_books/index.html.erb:18
+  [1m[36mCACHE User Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" DESC LIMIT 1[0m
+  ↳ app/views/user_books/index.html.erb:17
+  [1m[36mCACHE Book Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 1 ORDER BY "books"."id" DESC LIMIT 1[0m
+  ↳ app/views/user_books/index.html.erb:18
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" DESC LIMIT 1 /*action='index',application='TestApp',controller='user_books'*/[0m
+  ↳ app/views/user_books/index.html.erb:17
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 3 ORDER BY "books"."id" DESC LIMIT 1 /*action='index',application='TestApp',controller='user_books'*/[0m
+  ↳ app/views/user_books/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" DESC LIMIT 1[0m
+  ↳ app/views/user_books/index.html.erb:17
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 1 ORDER BY "books"."id" DESC LIMIT 1[0m
+  ↳ app/views/user_books/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" DESC LIMIT 1[0m
+  ↳ app/views/user_books/index.html.erb:17
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 3 ORDER BY "books"."id" DESC LIMIT 1[0m
+  ↳ app/views/user_books/index.html.erb:18
+  Rendered user_books/index.html.erb within layouts/application (Duration: 992.0ms | GC: 13.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 1542.0ms | GC: 43.5ms)
+Completed 200 OK in 5703ms (Views: 1764.9ms | ActiveRecord: 111.1ms (11 queries, 6 cached) | GC: 83.6ms)
+
+
+Started GET "/books" for 172.17.0.1 at 2026-02-03 05:38:12 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.5ms)[0m  [1m[34mSELECT "books".* FROM "books" /*action='index',application='TestApp',controller='books'*/[0m
+  ↳ app/views/books/index.html.erb:8
+  Rendered books/index.html.erb within layouts/application (Duration: 400.6ms | GC: 20.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 414.1ms | GC: 20.2ms)
+Completed 200 OK in 2325ms (Views: 431.3ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 23.3ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestApp'*/[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[35mSET search_path TO public /*application='TestApp'*/[0m
+  [1m[35m (150.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "test_app_development" /*application='TestApp'*/[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[35mSET search_path TO public /*application='TestApp'*/[0m
+  [1m[35m (140.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "test_app_test" /*application='TestApp'*/[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[35mSET search_path TO public /*application='TestApp'*/[0m
+  [1m[35m (133.7ms)[0m  [1m[35mCREATE DATABASE "test_app_development" ENCODING = 'unicode' /*application='TestApp'*/[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mSET search_path TO public /*application='TestApp'*/[0m
+  [1m[35m (164.3ms)[0m  [1m[35mCREATE DATABASE "test_app_test" ENCODING = 'unicode' /*application='TestApp'*/[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='TestApp'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "books" CASCADE /*application='TestApp'*/[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "title" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "author" character varying, "price" decimal, "published_date" date) /*application='TestApp'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_books" CASCADE /*application='TestApp'*/[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "user_books" ("id" bigserial primary key, "user_id" integer, "book_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='TestApp'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE /*application='TestApp'*/[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='TestApp'*/[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+  [1m[35m (4.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20260203043129) /*application='TestApp'*/[0m
+  [1m[35m (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20260203043051),
+(20260128033547),
+(20260116152759); /*application='TestApp'*/[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2026-02-03 05:39:24.559662', '2026-02-03 05:39:24.559669') RETURNING "key" /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '25cb0637dc66e57852174c869ae961977dae81db', '2026-02-03 05:39:24.595964', '2026-02-03 05:39:24.595967') RETURNING "key" /*application='TestApp'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7992348028875656775) /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestApp'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7992348028875656775) /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Create (9.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ('Melissa', '2026-02-03 05:39:25.931831', '2026-02-03 05:39:25.931831') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Create (5.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ('Andrea', '2026-02-03 05:39:25.995336', '2026-02-03 05:39:25.995336') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mBook Create (6.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author", "price", "published_date") VALUES ('Harry Potter (DEV)', '2026-02-03 05:39:26.128174', '2026-02-03 05:39:26.128174', 'JK Rowling', 10.99, '2026-02-03') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mBook Create (5.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author", "price", "published_date") VALUES ('Harry Potter 2 (DEV)', '2026-02-03 05:39:26.158391', '2026-02-03 05:39:26.158391', 'JK Rowling', 11.99, '2026-02-03') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mBook Create (4.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author", "price", "published_date") VALUES ('Harry Potter 3 (DEV)', '2026-02-03 05:39:26.194996', '2026-02-03 05:39:26.194996', 'JK Rowling', 12.99, '2026-02-03') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 1 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mUserBook Create (1.2ms)[0m  [1m[32mINSERT INTO "user_books" ("user_id", "book_id", "created_at", "updated_at") VALUES (2, 1, '2026-02-03 05:39:26.668291', '2026-02-03 05:39:26.668291') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='TestApp'*/[0m
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 3 LIMIT 1 /*application='TestApp'*/[0m
+  [1m[36mUserBook Create (1.4ms)[0m  [1m[32mINSERT INTO "user_books" ("user_id", "book_id", "created_at", "updated_at") VALUES (1, 3, '2026-02-03 05:39:26.710776', '2026-02-03 05:39:26.710776') RETURNING "id" /*application='TestApp'*/[0m
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT /*application='TestApp'*/[0m
+Started GET "/books" for 172.17.0.1 at 2026-02-03 05:39:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestApp'*/[0m
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (57.8ms)[0m  [1m[34mSELECT "books".* FROM "books" /*action='index',application='TestApp',controller='books'*/[0m
+  ↳ app/views/books/index.html.erb:8
+  Rendered books/index.html.erb within layouts/application (Duration: 278.0ms | GC: 3.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 447.3ms | GC: 5.6ms)
+Completed 200 OK in 2444ms (Views: 482.6ms | ActiveRecord: 74.3ms (1 query, 0 cached) | GC: 38.1ms)
+
+
